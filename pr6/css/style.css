@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #444;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.side-menu a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+}
+
+.side-menu a:hover {
+    background-color: #555;
+}
+
+.side-menu.open {
+    left: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.color-box {
+    width: 100%;
+    height: 150px;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.text-block {
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.text-block.expanded {
+    max-height: 500px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.info {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+}
+
+.warning {
+    background-color: #ffc107;
+    color: black;
+    border: none;
+}
+
+.counter-display, .date-display {
+    margin-top: 10px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr6</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <button class="menu-toggle" id="menuToggle">☰</button>
+</header>
+
+<nav class="side-menu" id="sideMenu">
+    <button class="close-btn" id="closeMenu">✖</button>
+    <a href="#">Пункт 1</a>
+    <a href="#">Пункт 2</a>
+    <a href="#">Пункт 3</a>
+</nav>
+
+<main class="container">
+
+    <section class="card">
+        <div id="colorBox" class="color-box"></div>
+    </section>
+
+    <section class="card">
+        <div id="textBlock" class="text-block collapsed">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae rerum labore harum nobis blanditiis esse eveniet doloribus autem, aspernatur quo iste, delectus a odit, aliquam quidem deleniti. Autem, officia at.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum laudantium aliquid dignissimos similique quas nihil dolores ipsa nemo sequi suscipit possimus vel quidem consectetur, temporibus fugiat molestiae? Quod, voluptatem.
+        </div>
+        <button class="btn primary" id="toggleBtn">Показати більше</button>
+    </section>
+
+    <section class="card center">
+        <button class="btn info" onclick="showDate()">Показати дату та час</button>
+        <div id="dateOutput" class="date-display"></div>
+    </section>
+
+    <section class="card">
+        <h2>Обчислення суми</h2>
+        <input type="number" id="num1" class="input" placeholder="Перше число">
+        <input type="number" id="num2" class="input" placeholder="Друге число">
+        <button class="btn warning" onclick="calculateSum()">Обчислити</button>
+        <p>Результат: <span id="result">---</span></p>
+    </section>
+
+    <section class="card center">
+        <button class="btn success" id="counterBtn">Клік</button>
+        <div id="countDisplay" class="counter-display">Кліків: 0</div>
+    </section>
+
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
